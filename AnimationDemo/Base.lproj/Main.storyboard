@@ -29,6 +29,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Au-kK-gMT"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="EJW-3g-pws">
                                 <rect key="frame" x="56.5" y="638" width="301" height="38"/>
@@ -37,16 +40,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Fade In"/>
+                                        <connections>
+                                            <action selector="fadeIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mVe-mj-044"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6r-CD-JjX">
                                         <rect key="frame" x="117" y="0.0" width="67" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Grow"/>
+                                        <connections>
+                                            <action selector="grow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="liB-NM-pXD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-L4-y9P">
                                         <rect key="frame" x="234" y="0.0" width="67" height="38"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <state key="normal" title="Slide In"/>
+                                        <connections>
+                                            <action selector="slideIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B3T-Ih-Yqv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -62,6 +74,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="WJ1-3x-BnT" id="9Rk-Xv-0T1"/>
+                        <outlet property="imageView" destination="D2L-XC-fLe" id="fAA-xv-zPu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
